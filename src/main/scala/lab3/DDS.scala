@@ -24,14 +24,14 @@ class DDS {
   def cubeRoot(x:Double) = solve((n:Double)=>n * n * n - x)
 
   def nthRoot(x:Double, n:Int): Double ={
-    def power(b:Double,e:Int) ={
-      var result = 1d
-      for (i <- 1 to e)
-        result = result * b
-      result
+    def power(b:Double,e:Int,total:Double):Double ={
+      if (e==0)
+        total
+      else
+        power(b,e-1,total*b)
     }
 
-    solve((n2:Double) => power(n2,n)-x)
+    solve((n2:Double) => power(n2,n,1)-x)
   }
 
   // = value of an investment of $principle at an annual rate r compounded

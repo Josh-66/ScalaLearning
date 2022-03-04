@@ -24,12 +24,21 @@ class Lab3 {
 
 
   def countPass[T](elems: Array[T], test: T => Boolean): Int = {
-    var count = 0
-    for (i <- elems){
-      if (test(i))
-        count = count+1
+    def helper(index:Int, count:Int):Int = {
+      if (index>=elems.length)
+        count
+      else if test(elems(index)) then
+        helper(index+1,count+1)
+      else
+        helper(index+1,count)
     }
-    count
+//    var count = 0
+//    for (i <- elems){
+//      if (test(i))
+//        count = count+1
+//    }
+//    count
+    helper(0,0)
   }
 
 
