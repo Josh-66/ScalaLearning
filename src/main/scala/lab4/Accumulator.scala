@@ -12,15 +12,15 @@ def accum(program: List[Int=>Int]): Int = {
 
 def add(num:Int) = (x:Int)=>x+num
 def mul(num:Int) = (x:Int)=>x*num
-def display() = (x:Int)=> {
+def display(x:Int) ={
   println(s"register = ${x}")
   x
 }
-def clear() = (x:Int)=>0
+def clear(x:Int) = 0
 
 object AccumTest extends App{
   val program =
-    List(add(3), mul(4), add(5), display(), clear(), add(9), mul(2))
+    List(add(3), mul(4), add(5), display _, clear _, add(9), mul(2))
 
   println(accum(program))
 

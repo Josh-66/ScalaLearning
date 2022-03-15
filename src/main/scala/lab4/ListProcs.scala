@@ -10,7 +10,7 @@ object pipes {
   }
   // sum of sums
   def sos(lists: List[List[Double]]): Double = {
-    lists.map(x=>x.reduce(_+_)).reduce(_+_)
+    lists.map(_.reduce(_+_)).reduce(_+_)
   }
   // = # pass
   def countPass[T](vals: List[T], test: T => Boolean): Int = {
