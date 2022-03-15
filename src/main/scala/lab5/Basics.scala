@@ -19,17 +19,13 @@ class Assignment(val name:String, val id:Int,private var _grade:Int) {
     _grade=amt
   }
   def letterGrade:LetterGrade = {
-    if (grade>=90)
-      LetterGrade.A
-    else if (grade>=80)
-      LetterGrade.B
-    else if (grade>=70)
-      LetterGrade.C
-    else if (grade>=60)
-      LetterGrade.D
-    else
-      LetterGrade.F
-
+      grade match{
+        case x if x>=90 => LetterGrade.A
+        case x if x>=80 => LetterGrade.B
+        case x if x>=80 => LetterGrade.C
+        case x if x>=80 => LetterGrade.D
+        case x if x>=80 => LetterGrade.F
+      }
   }
 
   override def toString: String = s"${name} assn ${id}: ${grade} (=${letterGrade})"
