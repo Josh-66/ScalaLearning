@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project.untitled-build.iml" filepath="$PROJECT_DIR$/.idea/modules/project.untitled-build.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/untitled.iml" filepath="$PROJECT_DIR$/.idea/modules/untitled.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/untitled-build.iml" filepath="$PROJECT_DIR$/.idea/modules/untitled-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CS152.iml" filepath="$PROJECT_DIR$/.idea/modules/CS152.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CS152-build.iml" filepath="$PROJECT_DIR$/.idea/modules/CS152-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project.CS152-build.iml" filepath="$PROJECT_DIR$/.idea/modules/project.CS152-build.iml" />
     </modules>
   </component>
 </project>
